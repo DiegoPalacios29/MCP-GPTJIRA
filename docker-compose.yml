@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  middleware:
+    build: .
+    container_name: jira_openai_triage_middleware
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
